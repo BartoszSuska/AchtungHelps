@@ -15,7 +15,48 @@ nav ul li {
 }
 
 #gallery img {
-    width: 300px;
+    width: 450px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 20px;
     margin: 10px;
-    border-radius: 5px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.image-info {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.image-info p {
+    margin: 5px 0 0;
+    color: #666;
 }
